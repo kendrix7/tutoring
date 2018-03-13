@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './Home.css';
+import './SAT.css';
 
-export default class Home extends Component {
+export default class SAT extends Component {
     render() {
         return (
             <div>
-                Hi!
+                SAT Page
             </div>
         )
     }
