@@ -1,0 +1,103 @@
+@media (min-width: 1920px) {
+    @import url(https://fonts.googleapis.com/css?family=Lato:900);
+    *, *:before, *:after{
+        box-sizing:border-box;
+    }
+
+    .home {
+        width: 1920px;
+        height: 1280px;
+        background-image: url(../../assets/Tut_Home_1920.jpg);
+        font-family: 'Lato', sans-serif;
+    }
+
+    .home_top {
+        width: 1920px;
+        height: 1080px;
+
+        display: flex;
+
+        border: 2px solid red;
+    }
+
+    .home_top_left {
+        width: 400px;
+        height: 1080px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        border: 2px solid pink;
+    }
+
+    .home_top_right {
+        width: 1520px;
+        height: 1080px;
+
+        border: 2px solid green;
+    }
+
+    .link{
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 8em;
+        margin: 0.2em;
+        position: relative;
+        color: #00B4F1;
+        transform-style: preserve-3d;
+        perspective: 400;
+        z-index: 1;
+        align-self: center;
+      }
+      .link:before, .link:after{
+        position:absolute;
+        content: attr(data-link);
+        transform-origin: top left;
+        top:0;
+        left:0;
+      }
+      .link, .link:before, .link:after{
+        transition: all 0.3s ease-in-out;
+      }
+      .link:before{
+        color: #fff;
+        text-shadow: 
+          -1px 0px 1px rgba(255,255,255,.8),
+          1px 0px 1px rgba(0,0,0,.8);
+        z-index: 3;
+        transform:
+          rotateX(0deg)
+          rotateY(-15deg)
+          rotateZ(0deg);
+      }
+      .link:after{
+        color: rgba(0,0,0,.11);
+        z-index:2;
+        transform:
+          scale(1.08,1)
+          rotateX(0deg)
+          rotateY(0deg)
+          rotateZ(0deg)
+          skew(0deg,1deg);
+      }
+      .link:hover:before{
+        color: #fafafa;
+        transform:
+          rotateX(0deg)
+          rotateY(-40deg)
+          rotateZ(0deg);
+      }
+      .link:hover:after{
+        transform:
+          scale(1.08,1)
+          rotateX(0deg)
+          rotateY(40deg)
+          rotateZ(0deg)
+          skew(0deg,22deg);
+      }
+
+      #SAT_link {
+          margin-bottom: 200px;
+      }
+}
