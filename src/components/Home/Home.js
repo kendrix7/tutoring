@@ -13,7 +13,8 @@ export default class Home extends Component {
                     </div>
 
                     <div className='home_top_right'>
-                        <div className='' ></div>
+                        <h1>Mark's Mind</h1>
+                        <p>Hey everybody! Welcome to Mark's mind palace! Everything I have gleaned from years of acing standardized tests is here at your fingertips. Feel free to browse, but please don't feed the animals.</p>
                     </div>
                 </div>
 

@@ -35,7 +35,28 @@
         width: 1520px;
         height: 1080px;
 
+        display: flex;
+        flex-direction: column;
+
         border: 2px solid green;
+    }
+
+    .home_top_right h1 {
+        width: 600px;
+        font-size: 3em;
+        color: #0b132b;
+        opacity: .85;
+        /* text-shadow: 1px 1px #141414; */
+
+        border: 2px solid black;
+    }
+
+    .home_top_right p {
+        width: 600px;
+        font-size: 1.5em;
+        color: #0b132b;
+
+        border: 2px solid black;
     }
 
     .link{
@@ -48,56 +69,63 @@
         transform-style: preserve-3d;
         perspective: 400;
         z-index: 1;
+        opacity: .80;
         align-self: center;
-      }
-      .link:before, .link:after{
+    }
+
+    .link:before, .link:after{
         position:absolute;
         content: attr(data-link);
         transform-origin: top left;
         top:0;
         left:0;
-      }
-      .link, .link:before, .link:after{
+    }
+
+    .link, .link:before, .link:after{
         transition: all 0.3s ease-in-out;
-      }
-      .link:before{
+    }
+
+    .link:before{
         color: #fff;
         text-shadow: 
-          -1px 0px 1px rgba(255,255,255,.8),
-          1px 0px 1px rgba(0,0,0,.8);
+            -1px 0px 1px rgba(255,255,255,.8),
+             1px 0px 1px rgba(0,0,0,.8);
         z-index: 3;
         transform:
-          rotateX(0deg)
-          rotateY(-15deg)
-          rotateZ(0deg);
-      }
-      .link:after{
+            rotateX(0deg)
+            rotateY(-15deg)
+            rotateZ(0deg);
+    }
+
+    .link:after{
         color: rgba(0,0,0,.11);
         z-index:2;
         transform:
-          scale(1.08,1)
-          rotateX(0deg)
-          rotateY(0deg)
-          rotateZ(0deg)
-          skew(0deg,1deg);
-      }
-      .link:hover:before{
+            scale(1.08,1)
+            rotateX(0deg)
+            rotateY(0deg)
+            rotateZ(0deg)
+            skew(0deg,1deg);
+    }
+
+    .link:hover:before{
         color: #fafafa;
         transform:
-          rotateX(0deg)
-          rotateY(-40deg)
-          rotateZ(0deg);
-      }
-      .link:hover:after{
-        transform:
-          scale(1.08,1)
-          rotateX(0deg)
-          rotateY(40deg)
-          rotateZ(0deg)
-          skew(0deg,22deg);
-      }
+            rotateX(0deg)
+            rotateY(-40deg)
+            rotateZ(0deg);
+    }
 
-      #SAT_link {
-          margin-bottom: 200px;
-      }
+    .link:hover:after{
+        transform:
+            scale(1.08,1)
+            rotateX(0deg)
+            rotateY(40deg)
+            rotateZ(0deg)
+            skew(0deg,22deg);
+    }
+
+    #SAT_link {
+        margin-bottom: 200px;
+    }
 }
